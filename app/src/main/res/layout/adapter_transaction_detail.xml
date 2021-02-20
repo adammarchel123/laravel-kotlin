@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imvImage"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_no_image"
+            app:riv_corner_radius="10dp" />
+
+        <TextView
+            android:id="@+id/txvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imvImage"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            tools:text="Makanan" />
+
+        <TextView
+            android:id="@+id/txvNameProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvCategory"
+            android:layout_toEndOf="@+id/imvImage"
+            android:textColor="@color/white"
+            tools:text="Le Minerale" />
+
+        <TextView
+            android:id="@+id/txvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvNameProduct"
+            android:layout_toEndOf="@+id/imvImage"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="Rp 45.000 x4" />
+
+        <TextView
+            android:id="@+id/txvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txvPrice"
+            android:layout_toEndOf="@+id/imvImage"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:text="Rp 180.000" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

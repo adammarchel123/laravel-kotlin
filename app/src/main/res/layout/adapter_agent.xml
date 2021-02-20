@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txvOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="5dp"
+            android:text="&#8942;"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imvImage"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_no_image"
+            app:riv_corner_radius="10dp"/>
+
+        <TextView
+            android:id="@+id/txvNameStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imvImage"
+            android:layout_toStartOf="@id/txvOptions"
+            android:text="Nama Toko"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/imvImage"
+            android:layout_below="@id/txvNameStore"
+            android:drawableStart="@drawable/ic_location"
+            android:text="Lokasi"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
